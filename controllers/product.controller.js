@@ -58,5 +58,7 @@ exports.allProducts = (req, res) => {
   Product.find((err, products) => {
     if (err) return console.error(err);
     res.send(products);
+    console.log(products.length);
+    
   });
 };
