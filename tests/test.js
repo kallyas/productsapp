@@ -4,18 +4,15 @@ require('mocha');
 var assert = require('assert');
 var productsapp = require('..');
 
-describe('productsapp', function() {
-  it('should export a function', function() {
-    assert.equal(typeof productsapp, 'function');
-  });
+describe('productsapp', () => {
 
-  it('should export an object', function() {
+  it('should export an object', () => {
     assert(productsapp);
     assert.equal(typeof productsapp, 'object');
   });
 
-  it('should throw an error when invalid args are passed', function() {
-    assert.throws(function() {
+  it('should throw an error when invalid args are passed', () => {
+    assert.throws(() => {
       productsapp();
     });
   });
