@@ -1,4 +1,6 @@
 const Product = require("../models/product.model");
+
+// testing
 exports.test = (req, res) => {
   res.send("greetings from testcontroller");
 };
@@ -17,6 +19,7 @@ exports.productCreate = (req, res) => {
   });
 };
 
+// get product by Id
 exports.productDetails = (req, res, next) => {
   Product.findById(req.params.id, (err, product) => {
     if (err) return next(err);
@@ -24,6 +27,7 @@ exports.productDetails = (req, res, next) => {
   });
 };
 
+// update product by Id
 exports.productUpdate = (req, res) => {
   Product.findByIdAndUpdate(
     req.params.id,
@@ -38,6 +42,7 @@ exports.productUpdate = (req, res) => {
   );
 };
 
+// delete a product by ID
 exports.productDelete = (req, res) => {
   Product.findByIdAndRemove(req.params.id, (err) => {
     if (err) return next(err);
@@ -48,8 +53,10 @@ exports.productDelete = (req, res) => {
   });
 };
 
-// exports.allProducts = (req, res) => {
-//   let data = Product.find(req.params.name);
-//   res.send(data);
-//   console.log(data);
-// };
+//get all products
+exports.allProducts = (req, res) => {
+  Product.find((err, products) => {
+    if (err) return console.error(err);
+    res.send(products);
+  });
+};

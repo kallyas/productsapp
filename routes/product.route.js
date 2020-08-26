@@ -19,7 +19,8 @@ router.put("/:id/update", productController.productUpdate);
 // delete end point
 router.delete("/:id/delete", productController.productDelete);
 
-// router.get("/", productController.allProducts);
+//get all products
+router.get("/", productController.allProducts);
 
 //export the module
 module.exports = router;
