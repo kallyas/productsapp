@@ -21,7 +21,7 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send(
     "<h1>Welcome to products app! Please visit /products end point to fetch data</h1>"
   );
