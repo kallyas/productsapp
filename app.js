@@ -26,6 +26,7 @@ app.use("/", (req, res) => {
     "<h1>Welcome to products app! Please visit /products end point to fetch data</h1>"
   );
 });
+
 app.use("/products", product);
 
 const PORT = process.env.PORT || 5200;
