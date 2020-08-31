@@ -10,7 +10,7 @@ const app = express();
 // Set up mongoose connection
 const mongoose = require("mongoose");
 
-let mongoDB = process.env.MONGODB_URI || "mongodb+srv://admin:RYGvAr1ine0kZmVf@api.4wjwu.mongodb.net/core?retryWrites=true&w=majority";
+let mongoDB = process.env.MONGODB_URI || "";
 mongoose.connect(mongoDB, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
