@@ -1,5 +1,7 @@
 # productsapp
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fe69a1c683864e1b9a557915e2209731)](https://app.codacy.com/manual/kallyasmedia/productsapp?utm_source=github.com&utm_medium=referral&utm_content=kallyas/productsapp&utm_campaign=Badge_Grade_Dashboard)
+
 A simple RESTful API
 
 ### Preriquisites
