@@ -37,4 +37,4 @@ npm run start
 
 License
 
-[MIT](./LISENCE)
+[MIT](/LISENCE)
