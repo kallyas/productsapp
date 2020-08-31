@@ -1,4 +1,5 @@
 # productsapp
+
 A simple RESTful API
 
 ### Preriquisites
@@ -33,3 +34,7 @@ start the app
 ```bash
 npm run start
 ```
+
+License
+
+[MIT](./LISENCE)
