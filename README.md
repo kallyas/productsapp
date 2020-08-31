@@ -22,6 +22,8 @@ Install dependencies
 npm i
 ```
 
+### Environment Variables
+
 create a `.env` file
 
 ```bash
@@ -35,6 +37,38 @@ start the app
 npm run start
 ```
 
+### Create A Product
+
+| End Point          | Method | Params | Data Type |
+| ------------------ | ------ | ------ | --------- |
+| `/products/create` | POST   | `None` | `None`    |
+
+- **Request.Body**
+
+```json
+{
+  "name": "Iphone",
+  "price": 50000
+}
+```
+
+- **Request Headers**
+
+  > `None`
+
+**Success Response:**
+
+**Status: `200 OK`**
+
+**Sample Content:**
+
+```json
+{
+  "status": 200,
+  "message": "Product created success fully!"
+}
+```
+
 License
 
-[MIT](/LISENCE)
+[MIT](/LICENSE)
