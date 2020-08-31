@@ -19,6 +19,7 @@ exports.productCreate = (req, res) => {
 exports.productDetails = (req, res, next) => {
   Product.findById(req.params.id, (err, product) => {
     if (err) return next(err);
+    if (!req.params.id) return console.log(`Not Found`);
     res.send(product);
   });
 };
@@ -42,6 +43,7 @@ exports.productUpdate = (req, res) => {
 exports.productDelete = (req, res) => {
   Product.findByIdAndRemove(req.params.id, (err) => {
     if (err) return next(err);
+
     res.send({
       status: 200,
       message: "Deleted successfully!",
@@ -55,6 +57,5 @@ exports.allProducts = (req, res) => {
     if (err) return console.error(err);
     res.send(products);
     console.log(products.length);
-    
   });
 };
