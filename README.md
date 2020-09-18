@@ -1,7 +1,6 @@
 # productsapp
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fe69a1c683864e1b9a557915e2209731)](https://app.codacy.com/manual/kallyasmedia/productsapp?utm_source=github.com&utm_medium=referral&utm_content=kallyas/productsapp&utm_campaign=Badge_Grade_Dashboard) ![build](https://github.com/kallyas/productsapp/workflows/Node.js%20CI/badge.svg?branch=master)
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fe69a1c683864e1b9a557915e2209731)](https://app.codacy.com/manual/kallyasmedia/productsapp?utm_source=github.com&utm_medium=referral&utm_content=kallyas/productsapp&utm_campaign=Badge_Grade_Dashboard) ![api build](https://github.com/kallyas/productsapp/workflows/api%20build/badge.svg?branch=master)
 A simple RESTful API
 
 ### Preriquisites
