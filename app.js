@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const app = express();
 
-// Set up mongoose connection
+// Set up mongoose database connection
 const mongoose = require("mongoose");
 const options = {
   useNewUrlParser: true,
